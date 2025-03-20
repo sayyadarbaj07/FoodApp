@@ -21,7 +21,7 @@ const CategoryMenu = () => {
 
   return (
     <>
-      <div className="ml-6">
+      <div className="ml-6 mt-10">
         <h3 className="text-xl font-semibold">Find the best food</h3>
         <div className="my-5 flex gap-3 overflow-x-scroll scroll-smooth lg:overflow-hidden">
           <button
