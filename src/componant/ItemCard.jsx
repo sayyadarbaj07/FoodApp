@@ -7,18 +7,21 @@ import {
   decrementQty,
   incrementQty,
 } from "../redux/slices/CartSlice";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast"; // ✅ Toaster added
 
 const ItemCard = ({ id, name, qty, price, img }) => {
   const dispatch = useDispatch();
 
   return (
     <>
+      <Toaster position="top-right" reverseOrder={false} />{" "}
+      {/* ✅ Toaster Added */}
       <div className="flex gap-2 shadow-md rounded-lg p-2 mb-3">
         <MdDelete
           onClick={() => {
+            console.log(`Removing: ${name}`); // ✅ Debugging
             dispatch(removeFromCart({ id }));
-            toast.error(`${name} Remove`, {
+            toast.error(`${name} Removed`, {
               icon: "🚫",
             });
           }}
