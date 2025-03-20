@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+*{
+    
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  
+}
+body {
+    background: rgb(244, 244, 244);
+    margin: 0;  /* Important to prevent white gaps */
+    height: 100vh; /* Ensures full viewport coverage */
+  }
